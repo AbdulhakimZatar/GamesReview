@@ -61,6 +61,7 @@ nav a {
     border: 4px solid hsl(211, 100%, 56%);
     width: 800px;
     border-radius: 5px;
+    opacity: 0.7;
  }
 
  * {
