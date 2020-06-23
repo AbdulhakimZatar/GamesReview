@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/review.css">
     <title>Games Review</title>
+    <script src="js/age.js"> </script>
+    <script src="js/lab06.js"> </script>
 </head>
 
 <body>
@@ -14,7 +17,6 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="store.html">Store</a></li>
-                <li><a href="review.html">Review a game</a></li>
                 <li><a href="aboutus.html">About us</a></li>
             </ul>
             <hr>
@@ -26,30 +28,15 @@
 
     <main>
         <div style="text-align: center;">
-            <article class="artbor">
-                <section class="secp">
-                    <img class="cimg" src="https://img.youtube.com/vi/8z4v-V76gn8/maxresdefault.jpg" alt="tlou2">
-                    
-                </section>
-                <section class="secp">
-                    <p class="imgp">
-                        Not as good as it thinks it is <a href="article/tlou2.html">Read more</a>
-                    </p>
-                </section>
-            </article>
-    
-            <article class="artbor">
-                <section class="secp">
-                    <img class="cimg" src="https://steamcdn-a.akamaihd.net/steam/apps/393380/capsule_616x353.jpg" alt="Squad">
-                </section>
-                <section class="secp">
-                    <p class="imgp">
-                        Squad has grown into a deep military shooter <a href="article/squad.html">Read more</a>
-                    </p>
-                </section>
-            </article>
-            <br><br><br>
+        <h2><script>document.write(gamename);</script></h2>
         </div>
+        <div>
+            <section>
+                <p class="pa">Reviewer: <script>document.write(reviewer);</script></p>
+                <p class="pa">Rating: <script>document.write(rating_save);</script></p>
+            </section>
+        </div>
+            <br><br><br>
         
     </main>
 
