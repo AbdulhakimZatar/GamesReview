@@ -1,0 +1,32 @@
+.title {
+    display: inline-block;
+     position: absolute;
+     top: -10px;
+     left: 100px;
+     width: 200px;
+     text-align: center;
+     padding: 10px;
+}
+
+.buy {
+    display: inline-block;
+     position: absolute;
+     top: 150px;
+     border: solid black;
+     left: 100px;
+     width: 200px;
+     text-align: center;
+     padding: 4px;
+     border-radius: 8px;
+     background-color: darkgray;
+     text-decoration: none;
+     color: darkred;
+}
+
+.sectitle {
+    text-align: center;
+    position: relative;
+    width: 395px;
+    height: 195px;
+    top: -200px;
+

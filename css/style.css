@@ -2,7 +2,9 @@
     width: 400px;
     height: 200px;
     display: inline-block;
-    
+    position: absolute;
+    top: 0px;
+    border-right: solid black;
 }
 
 section {
@@ -38,18 +40,37 @@ nav a {
  }
 
  .imgp {
-     position: relative;
+     display: inline-block;
+     position: absolute;
+     top: 0px;
+     margin-left: 7px;
+     font-weight: bold;
 
  }
 
  .secp {
-     position: absolute;
+     position: relative;
      width: 390px;
+     height: 390px;
  }
 
  footer {
-     font-style: italic;
+     text-align: center;
+     border: 2px solid black;
+     background-color: hsl(211, 100%, 56%);
+     height: 105px;
+     opacity: 0.8;
+     line-height: 20%;
+
  }
+ footer ul li {
+     display: inline-block;
+     margin: 20px;
+ }
+ footer ul li a {
+     text-decoration: none;
+ }
+
 
  #logo {
      display: block;
@@ -66,4 +87,6 @@ nav a {
 
  * {
     font-family: "Lucida Console", Courier, monospace;
+    ;
   }
+  

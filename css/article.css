@@ -1,0 +1,17 @@
+div h2{
+    text-align: center;
+}
+
+.artimg {
+    width: 500px;
+    height: 350px;
+    float: left;
+    border: solid black 2px;
+    margin-right: 5px;
+}
+
+p {
+    color: rgb(26, 25, 25);
+    line-height: 1.4;
+}
+
