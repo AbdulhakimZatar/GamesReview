@@ -20,3 +20,10 @@ if (rating >=10) {
 } else {
     rating_save = "Wrong value";
 }
+
+function color(){
+    var textcolor = prompt('What color text would you like the review to be in:');
+    document.getElementById("chcolor").style.color = textcolor
+}
+
+

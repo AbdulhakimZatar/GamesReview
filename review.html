@@ -8,6 +8,7 @@
     <title>Games Review</title>
     <script src="js/age.js"> </script>
     <script src="js/lab06.js"> </script>
+    <script>onload="load()"</script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <br>
     </header>
 
-    <main>
+    <main id="chcolor">
         <div style="text-align: center;">
         <h2><script>document.write(gamename);</script></h2>
         </div>
@@ -37,6 +38,9 @@
                 <p class="pa">Rating: <script>document.write(rating_save);</script></p>
             </section>
         </div>
+        <div style="text-align: center;">
+            <button onclick="color()">Change text color of review</button>
+            </div>
             <br><br><br>
         
     </main>
