@@ -1,5 +1,6 @@
 'use strict';
 
+// Ask user to review a game then put his/her answer in the body.
 function review() {
     var reviewer = prompt('Enter your name:');
     var gamename = prompt('Enter name of the game:');
@@ -9,7 +10,6 @@ function review() {
     while (rating < 0 || rating > 10) {
         rating = prompt('Enter your rating for the game from 0-10:');
     }
-
     if (rating >= 10) {
         rating_save = "Best game i have ever tried.";
     } else if (rating >= 8) {
@@ -22,15 +22,13 @@ function review() {
         rating_save = "Wrost game ever.";
     } else {
         rating_save = "Wrong value";
-
-
     }
     document.getElementById("gametitle").innerHTML = gamename;
     document.getElementById("reviewer").innerHTML += reviewer;
     document.getElementById("rating").innerHTML += rating_save;
 }
 
-
+// Check if user 18 and over years old.
 function age() {
     var age = confirm("Are you 18 or over years old?")
     if (age == true) {
@@ -38,12 +36,11 @@ function age() {
     } else {
         alert("Sorry you are under age, you are not allowed to submit review if you under 18");
         window.location.replace('index.html');
-        return;
     }
 }
-
 age();
 
+// Add photos button as many as user want using url
 function pics() {
     var numberPics = prompt("How many photos you want to add?");
     for (var i = 1; i <= numberPics; i++) {
@@ -53,12 +50,10 @@ function pics() {
         x.setAttribute("width", "250");
         x.setAttribute("height", "250");
         document.getElementById("photos").appendChild(x);
-
-        //document.getElementById("photos").innerHTML = "<img src=" + urlPics + ">";
     }
-
 }
 
+//Change color of the text in page.
 function color() {
     var textcolor = prompt('What color text would you like the review to be in:');
     document.getElementById("chcolor").style.color = textcolor
