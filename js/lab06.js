@@ -18,10 +18,12 @@ if (rating >=10) {
     rating_save = "Wrost game ever.";
 } else {
     rating_save = "Wrong value";
-    document.getElementById("gametitle").innerHTML = gamename;
-    document.getElementById("reviewer").innerHTML += rating_save;
-    document.getElementById("rating").innerHTML += reviewer;
+
+    
 }
+    document.getElementById("gametitle").innerHTML = gamename;
+    document.getElementById("reviewer").innerHTML += reviewer;
+    document.getElementById("rating").innerHTML += rating_save;
 }
 
 
