@@ -2,3 +2,10 @@
     font-weight: bold;
     margin-left: 5px;
 }
+
+#photos {
+    text-align: center;
+}
+#photos img {
+    margin-right: 10px;
+}
