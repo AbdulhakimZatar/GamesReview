@@ -6,9 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/review.css">
     <title>Games Review</title>
-    <script src="js/age.js"> </script>
-    <script src="js/lab06.js"> </script>
-    <script>onload="load()"</script>
+
 </head>
 
 <body>
@@ -30,12 +28,12 @@
 
     <main id="chcolor">
         <div style="text-align: center;">
-        <h2><script>document.write(gamename);</script></h2>
+        <h2 id="gametitle"></h2>
         </div>
         <div>
             <section>
-                <p class="pa">Reviewer: <script>document.write(reviewer);</script></p>
-                <p class="pa">Rating: <script>document.write(rating_save);</script></p>
+                <p class="pa" id="reviewer">Reviewer: </p>
+                <p class="pa" id="rating">Rating: </p>
             </section>
         </div>
         <div style="text-align: center;">
@@ -46,6 +44,7 @@
     </main>
 
     <footer>
+        <script src="js/lab06.js"> </script>
         <p style="font-weight: bold;">Social Media</p>
         <ul>
             <li><a style="color: darkblue;" href="https://facebook.com">Facebook</a></li>
